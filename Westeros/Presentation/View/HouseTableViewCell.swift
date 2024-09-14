@@ -6,18 +6,26 @@
 //
 
 import UIKit
-
-class HouseTableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+// el final es para que sepamos que esta clase no va ser heredada.
+final class HouseTableViewCell: UITableViewCell {
+    // MARK: Identifier
+    // Usando String(decribing:) vamos a crear un string
+    // de la siguiente forma "HouseTableViewCell"
+    // static let identifier = "HouseTableViewCell"
+    static let identifier = String(describing: HouseTableViewCell.self)
+    // MARK: - Outlets
+    @IBOutlet weak var houseImageView: UIImageView!
+    @IBOutlet weak var houseLabel: UILabel!
     
+    // MARK: - Configuration
+    func configure(witch house: House) {
+        // RawValue lo utilizamos para obtener
+        // la representacion del String
+        houseLabel.text = house.rawValue
+        
+        guard let imageURL = house.imageURL else {
+            return
+        }
+        houseImageView.setImage(url: imageURL)
+    }
 }

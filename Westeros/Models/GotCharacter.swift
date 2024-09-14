@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct GotCharacter {
+    let fullname: String
+    let title: String
+    let family: String
+}

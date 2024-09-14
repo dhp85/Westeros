@@ -9,21 +9,43 @@
 /* Begin PBXBuildFile section */
 		F7070A872C90E1B300331149 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7070A862C90E1B300331149 /* AppDelegate.swift */; };
 		F7070A892C90E1B300331149 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7070A882C90E1B300331149 /* SceneDelegate.swift */; };
-		F7070A8B2C90E1B300331149 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7070A8A2C90E1B300331149 /* ViewController.swift */; };
-		F7070A8E2C90E1B300331149 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F7070A8D2C90E1B300331149 /* Base */; };
 		F7070A902C90E1B300331149 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7070A8F2C90E1B300331149 /* Assets.xcassets */; };
 		F7070A932C90E1B300331149 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F7070A922C90E1B300331149 /* Base */; };
+		F7070A9C2C90E51900331149 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7070A9B2C90E51900331149 /* House.swift */; };
+		F7070A9E2C90E5AA00331149 /* GotCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7070A9D2C90E5AA00331149 /* GotCharacter.swift */; };
+		F7070AA62C90E7FA00331149 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7070AA42C90E7FA00331149 /* FirstViewController.swift */; };
+		F7070AA72C90E7FA00331149 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7070AA52C90E7FA00331149 /* FirstViewController.xib */; };
+		F72F44A72C935AAB00DFF0F0 /* HouseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F44A52C935AAB00DFF0F0 /* HouseListViewController.swift */; };
+		F72F44A82C935AAB00DFF0F0 /* HouseListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F72F44A62C935AAB00DFF0F0 /* HouseListViewController.xib */; };
+		F72F44AB2C935DA800DFF0F0 /* HouseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F44A92C935DA800DFF0F0 /* HouseTableViewCell.swift */; };
+		F72F44AC2C935DA800DFF0F0 /* HouseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F72F44AA2C935DA800DFF0F0 /* HouseTableViewCell.xib */; };
+		F72F44B12C93641400DFF0F0 /* UImageView+Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F44B02C93641400DFF0F0 /* UImageView+Remote.swift */; };
+		F72F44B42C937D5800DFF0F0 /* FavoriteHouseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F44B22C937D5800DFF0F0 /* FavoriteHouseListViewController.swift */; };
+		F72F44B52C937D5800DFF0F0 /* FavoriteHouseListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F72F44B32C937D5800DFF0F0 /* FavoriteHouseListViewController.xib */; };
+		F72F44B82C9380C100DFF0F0 /* FavoriteHouseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F44B62C9380C100DFF0F0 /* FavoriteHouseCollectionViewCell.swift */; };
+		F72F44B92C9380C100DFF0F0 /* FavoriteHouseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F72F44B72C9380C100DFF0F0 /* FavoriteHouseCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F7070A832C90E1B300331149 /* Westeros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westeros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7070A862C90E1B300331149 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7070A882C90E1B300331149 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F7070A8A2C90E1B300331149 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F7070A8D2C90E1B300331149 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7070A8F2C90E1B300331149 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7070A922C90E1B300331149 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7070A942C90E1B400331149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7070A9B2C90E51900331149 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
+		F7070A9D2C90E5AA00331149 /* GotCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GotCharacter.swift; sourceTree = "<group>"; };
+		F7070AA42C90E7FA00331149 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		F7070AA52C90E7FA00331149 /* FirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		F72F44A52C935AAB00DFF0F0 /* HouseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListViewController.swift; sourceTree = "<group>"; };
+		F72F44A62C935AAB00DFF0F0 /* HouseListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseListViewController.xib; sourceTree = "<group>"; };
+		F72F44A92C935DA800DFF0F0 /* HouseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseTableViewCell.swift; sourceTree = "<group>"; };
+		F72F44AA2C935DA800DFF0F0 /* HouseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseTableViewCell.xib; sourceTree = "<group>"; };
+		F72F44B02C93641400DFF0F0 /* UImageView+Remote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UImageView+Remote.swift"; sourceTree = "<group>"; };
+		F72F44B22C937D5800DFF0F0 /* FavoriteHouseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteHouseListViewController.swift; sourceTree = "<group>"; };
+		F72F44B32C937D5800DFF0F0 /* FavoriteHouseListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteHouseListViewController.xib; sourceTree = "<group>"; };
+		F72F44B62C9380C100DFF0F0 /* FavoriteHouseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteHouseCollectionViewCell.swift; sourceTree = "<group>"; };
+		F72F44B72C9380C100DFF0F0 /* FavoriteHouseCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteHouseCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +78,66 @@
 		F7070A852C90E1B300331149 /* Westeros */ = {
 			isa = PBXGroup;
 			children = (
+				F72F44AD2C9363AA00DFF0F0 /* Extensions */,
+				F7070A9F2C90E60B00331149 /* Presentation */,
+				F7070A9A2C90E4C900331149 /* Models */,
 				F7070A862C90E1B300331149 /* AppDelegate.swift */,
 				F7070A882C90E1B300331149 /* SceneDelegate.swift */,
-				F7070A8A2C90E1B300331149 /* ViewController.swift */,
-				F7070A8C2C90E1B300331149 /* Main.storyboard */,
 				F7070A8F2C90E1B300331149 /* Assets.xcassets */,
 				F7070A912C90E1B300331149 /* LaunchScreen.storyboard */,
 				F7070A942C90E1B400331149 /* Info.plist */,
 			);
 			path = Westeros;
+			sourceTree = "<group>";
+		};
+		F7070A9A2C90E4C900331149 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F7070A9B2C90E51900331149 /* House.swift */,
+				F7070A9D2C90E5AA00331149 /* GotCharacter.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F7070A9F2C90E60B00331149 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				F7070AA12C90E63100331149 /* View */,
+				F7070AA02C90E62600331149 /* Controller */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		F7070AA02C90E62600331149 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F7070AA42C90E7FA00331149 /* FirstViewController.swift */,
+				F72F44A52C935AAB00DFF0F0 /* HouseListViewController.swift */,
+				F72F44B22C937D5800DFF0F0 /* FavoriteHouseListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F7070AA12C90E63100331149 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F7070AA52C90E7FA00331149 /* FirstViewController.xib */,
+				F72F44A62C935AAB00DFF0F0 /* HouseListViewController.xib */,
+				F72F44A92C935DA800DFF0F0 /* HouseTableViewCell.swift */,
+				F72F44AA2C935DA800DFF0F0 /* HouseTableViewCell.xib */,
+				F72F44B32C937D5800DFF0F0 /* FavoriteHouseListViewController.xib */,
+				F72F44B62C9380C100DFF0F0 /* FavoriteHouseCollectionViewCell.swift */,
+				F72F44B72C9380C100DFF0F0 /* FavoriteHouseCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F72F44AD2C9363AA00DFF0F0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F72F44B02C93641400DFF0F0 /* UImageView+Remote.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +199,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7070A902C90E1B300331149 /* Assets.xcassets in Resources */,
+				F72F44AC2C935DA800DFF0F0 /* HouseTableViewCell.xib in Resources */,
 				F7070A932C90E1B300331149 /* Base in Resources */,
-				F7070A8E2C90E1B300331149 /* Base in Resources */,
+				F72F44B92C9380C100DFF0F0 /* FavoriteHouseCollectionViewCell.xib in Resources */,
+				F72F44B52C937D5800DFF0F0 /* FavoriteHouseListViewController.xib in Resources */,
+				F7070AA72C90E7FA00331149 /* FirstViewController.xib in Resources */,
+				F72F44A82C935AAB00DFF0F0 /* HouseListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +215,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7070A8B2C90E1B300331149 /* ViewController.swift in Sources */,
+				F7070A9E2C90E5AA00331149 /* GotCharacter.swift in Sources */,
 				F7070A872C90E1B300331149 /* AppDelegate.swift in Sources */,
+				F7070AA62C90E7FA00331149 /* FirstViewController.swift in Sources */,
+				F7070A9C2C90E51900331149 /* House.swift in Sources */,
+				F72F44B42C937D5800DFF0F0 /* FavoriteHouseListViewController.swift in Sources */,
+				F72F44B12C93641400DFF0F0 /* UImageView+Remote.swift in Sources */,
 				F7070A892C90E1B300331149 /* SceneDelegate.swift in Sources */,
+				F72F44AB2C935DA800DFF0F0 /* HouseTableViewCell.swift in Sources */,
+				F72F44A72C935AAB00DFF0F0 /* HouseListViewController.swift in Sources */,
+				F72F44B82C9380C100DFF0F0 /* FavoriteHouseCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F7070A8C2C90E1B300331149 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F7070A8D2C90E1B300331149 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F7070A912C90E1B300331149 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +372,6 @@
 				INFOPLIST_FILE = Westeros/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,7 +398,6 @@
 				INFOPLIST_FILE = Westeros/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -7,11 +7,14 @@
 
 import UIKit
 
-class FavoriteHouseCollectionViewCell: UICollectionViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+final class FavoriteHouseCollectionViewCell: UICollectionViewCell {
+    // MARK: - Identifier
+    static let idenfifier = String(describing: FavoriteHouseCollectionViewCell.self)
+    // MARK: - Outlets
+    @IBOutlet weak var houseNameLabel: UILabel!
+    // MARK: - Configuration
+    func configure(with house: House) {
+        houseNameLabel.text = house.rawValue
     }
-
+    
 }
