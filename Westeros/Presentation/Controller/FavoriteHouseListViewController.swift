@@ -13,7 +13,7 @@ final class FavoriteHouseListViewController: UICollectionViewController {
     typealias Snapshot = NSDiffableDataSourceSnapshot<Int, House>
     
     // MARK: - Model
-    private let favoriteHouses = [House]()
+    private var favoriteHouses = [String:House]()
     private var dataSource: DataSource?
     
     
@@ -25,7 +25,7 @@ final class FavoriteHouseListViewController: UICollectionViewController {
         super.init(collectionViewLayout: layout)
     }
     
-    @available(*, unavailable)// Le dices al copilador que es inaccesible
+    @available(*, unavailable)// Le dices al copilador que es inaccesible para todas las versiones de iOS
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -41,12 +41,36 @@ final class FavoriteHouseListViewController: UICollectionViewController {
             
         }
         
+        collectionView.dataSource = dataSource
+        // Añadir el dataSource a collection.
         var snapshot = Snapshot()
         snapshot.appendSections([0])
-        snapshot.appendItems(favoriteHouses)
+        snapshot.appendItems(Array(favoriteHouses.values))
         
         dataSource?.apply(snapshot)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(didReceive), name: .didToggleFavourite, object: nil)
     }
     
+    // obtener el evento.
+    @objc
+    func didReceive(_ notification: Notification) {
+        
+        guard let info = notification.userInfo, let house = info["house"] as? House,
+        var snapshot = dataSource?.snapshot() else {
+            return
+        }
+        
+        if let foundHouse = favoriteHouses[house.rawValue] {
+            favoriteHouses.removeValue(forKey: foundHouse.rawValue)
+            snapshot.deleteItems([foundHouse])
+        } else {
+            favoriteHouses[house.rawValue] = house
+            snapshot.appendItems([house])
+        }
+        
+        
+        dataSource?.apply(snapshot, animatingDifferences: false)
+    }
     
 }

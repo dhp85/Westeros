@@ -19,8 +19,10 @@ final class HouseListViewController: UITableViewController {
     
     // MARK: - Model
     // Constante privada
-    private let houses: [House] = House.allCases// es igual House.allCases a una array de todas las opciones del tipo House
+    private let houses: [House] = House.allCases
+    // es igual House.allCases a una array de todas las opciones del tipo House
     // Al declarar una variable como nula, el compilador infiere que su valor inical es nil
+    private var favouriteHouses = [String: House]()
     private var dataSoruce: DataSource?
     
     
@@ -36,7 +38,7 @@ final class HouseListViewController: UITableViewController {
                                            // tiene que instanciar el .xib que le especificamos en el UI
         
         // 2. Configurar el data source
-        dataSoruce = DataSource(tableView: tableView) {tableView, indexPath, house in
+        dataSoruce = DataSource(tableView: tableView) { [weak self] tableView, indexPath, house in
             // Obtenemos una celda reusable y la castamos a
             // el tipo de celda que queremos representar
             guard let cell = tableView.dequeueReusableCell(withIdentifier: HouseTableViewCell.identifier, for: indexPath) as? HouseTableViewCell else {
@@ -44,7 +46,9 @@ final class HouseListViewController: UITableViewController {
                 // retornamos una celda en blanco
                 return UITableViewCell()
             }
-            cell.configure(witch: house)
+            let foundHouse = self?.favouriteHouses[house.rawValue]
+            let isFavourite = foundHouse != nil
+            cell.configure(witch: house, isFavourite: isFavourite)
             return cell
         }
         // 3. Añadir el data source al table view
@@ -60,8 +64,45 @@ final class HouseListViewController: UITableViewController {
     }
 }
 
+//MARK: - Table View Delegate
+// Con esta extension le damos tamaño a nuestra celda.
 extension HouseListViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         100
     }
+    
+    // el delegado que nos dice que la celda ha sido presionada.
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let house = houses[indexPath.row]
+        let foundHouse = favouriteHouses[house.rawValue]
+        let isFavourite = foundHouse != nil
+        let detailViewController = HouseDetailViewController(house: house, isFavorite: isFavourite)
+        detailViewController.favouriteHouseDelegate = self
+        navigationController?.show(detailViewController, sender: self)
+    }
+}
+
+extension HouseListViewController: FavouriteHouseDelegate {
+    func didToggleFavourite(for house: House) {
+        // Eliminamos la casa que nos pasan por parametro
+        // del diccionario
+        if let foundHouse = favouriteHouses[house.rawValue] {
+            favouriteHouses.removeValue(forKey: foundHouse.rawValue)
+        } else {
+            //Añadimos la casa que nos pasan por parametro
+            favouriteHouses[house.rawValue] = house
+        }
+        
+        // para refrescar los datos.
+        guard var snapshot = dataSoruce?.snapshot() else {
+            return
+        }
+        // Refrescamos la celda cuyo modelo es house que nos pasan.
+        // Por parametro
+        snapshot.reloadItems([house])
+        dataSoruce?.apply(snapshot, animatingDifferences: false)
+        
+    }
+    
+    
 }

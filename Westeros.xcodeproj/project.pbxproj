@@ -24,6 +24,9 @@
 		F72F44B52C937D5800DFF0F0 /* FavoriteHouseListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F72F44B32C937D5800DFF0F0 /* FavoriteHouseListViewController.xib */; };
 		F72F44B82C9380C100DFF0F0 /* FavoriteHouseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F44B62C9380C100DFF0F0 /* FavoriteHouseCollectionViewCell.swift */; };
 		F72F44B92C9380C100DFF0F0 /* FavoriteHouseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F72F44B72C9380C100DFF0F0 /* FavoriteHouseCollectionViewCell.xib */; };
+		F7F5DFF92C989F7800A3EC1A /* HouseDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7F5DFF82C989F7800A3EC1A /* HouseDetailViewController.xib */; };
+		F7F5DFFA2C989F7800A3EC1A /* HouseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F5DFF72C989F7800A3EC1A /* HouseDetailViewController.swift */; };
+		F7F5DFFC2C98C35B00A3EC1A /* Notification+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F5DFFB2C98C35B00A3EC1A /* Notification+Name.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		F72F44B32C937D5800DFF0F0 /* FavoriteHouseListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteHouseListViewController.xib; sourceTree = "<group>"; };
 		F72F44B62C9380C100DFF0F0 /* FavoriteHouseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteHouseCollectionViewCell.swift; sourceTree = "<group>"; };
 		F72F44B72C9380C100DFF0F0 /* FavoriteHouseCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteHouseCollectionViewCell.xib; sourceTree = "<group>"; };
+		F7F5DFF72C989F7800A3EC1A /* HouseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailViewController.swift; sourceTree = "<group>"; };
+		F7F5DFF82C989F7800A3EC1A /* HouseDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseDetailViewController.xib; sourceTree = "<group>"; };
+		F7F5DFFB2C98C35B00A3EC1A /* Notification+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Name.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,7 @@
 				F7070AA42C90E7FA00331149 /* FirstViewController.swift */,
 				F72F44A52C935AAB00DFF0F0 /* HouseListViewController.swift */,
 				F72F44B22C937D5800DFF0F0 /* FavoriteHouseListViewController.swift */,
+				F7F5DFF72C989F7800A3EC1A /* HouseDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -128,6 +135,7 @@
 				F72F44B32C937D5800DFF0F0 /* FavoriteHouseListViewController.xib */,
 				F72F44B62C9380C100DFF0F0 /* FavoriteHouseCollectionViewCell.swift */,
 				F72F44B72C9380C100DFF0F0 /* FavoriteHouseCollectionViewCell.xib */,
+				F7F5DFF82C989F7800A3EC1A /* HouseDetailViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -136,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				F72F44B02C93641400DFF0F0 /* UImageView+Remote.swift */,
+				F7F5DFFB2C98C35B00A3EC1A /* Notification+Name.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -202,6 +211,7 @@
 				F72F44AC2C935DA800DFF0F0 /* HouseTableViewCell.xib in Resources */,
 				F7070A932C90E1B300331149 /* Base in Resources */,
 				F72F44B92C9380C100DFF0F0 /* FavoriteHouseCollectionViewCell.xib in Resources */,
+				F7F5DFF92C989F7800A3EC1A /* HouseDetailViewController.xib in Resources */,
 				F72F44B52C937D5800DFF0F0 /* FavoriteHouseListViewController.xib in Resources */,
 				F7070AA72C90E7FA00331149 /* FirstViewController.xib in Resources */,
 				F72F44A82C935AAB00DFF0F0 /* HouseListViewController.xib in Resources */,
@@ -220,11 +230,13 @@
 				F7070AA62C90E7FA00331149 /* FirstViewController.swift in Sources */,
 				F7070A9C2C90E51900331149 /* House.swift in Sources */,
 				F72F44B42C937D5800DFF0F0 /* FavoriteHouseListViewController.swift in Sources */,
+				F7F5DFFC2C98C35B00A3EC1A /* Notification+Name.swift in Sources */,
 				F72F44B12C93641400DFF0F0 /* UImageView+Remote.swift in Sources */,
 				F7070A892C90E1B300331149 /* SceneDelegate.swift in Sources */,
 				F72F44AB2C935DA800DFF0F0 /* HouseTableViewCell.swift in Sources */,
 				F72F44A72C935AAB00DFF0F0 /* HouseListViewController.swift in Sources */,
 				F72F44B82C9380C100DFF0F0 /* FavoriteHouseCollectionViewCell.swift in Sources */,
+				F7F5DFFA2C989F7800A3EC1A /* HouseDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

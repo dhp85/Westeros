@@ -27,9 +27,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // configuramos el tabBarItem
         let navigationController = UINavigationController(rootViewController: houseListViewController)
         let favoritesViewController = FavoriteHouseListViewController()
-        favoritesViewController.tabBarItem = UITabBarItem(title: "Favorites", image: UIImage(systemName: "start"), selectedImage: UIImage(systemName: "star.fill"))
+        favoritesViewController.tabBarItem = UITabBarItem(title: "Favorites", image: UIImage(systemName: "star"), selectedImage: UIImage(systemName: "star.fill"))
         let favoritesNavigationController = UINavigationController(rootViewController: favoritesViewController)
-        tabBarController.viewControllers = [navigationController, favoritesViewController]
+        tabBarController.viewControllers = [navigationController, favoritesNavigationController]
         // Asignamos el primer view controller
         window.rootViewController = tabBarController
         window.makeKeyAndVisible()

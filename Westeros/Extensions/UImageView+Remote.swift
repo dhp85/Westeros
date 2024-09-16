@@ -11,6 +11,7 @@ extension UIImageView {
     func setImage(url: URL) {
         // Capturamos self para no crear despendencias circulares
         downloadWithURLSession(url: url) { [weak self] image in
+            // le decimos al sistema que todo el trabajo asincrono que esta en otro hilo lo vamos a llevar al hilo principal "main".
             DispatchQueue.main.async {
                 self?.image = image
             }

@@ -14,14 +14,16 @@ final class HouseTableViewCell: UITableViewCell {
     // static let identifier = "HouseTableViewCell"
     static let identifier = String(describing: HouseTableViewCell.self)
     // MARK: - Outlets
+    @IBOutlet weak var favouriteImageView: UIImageView!
     @IBOutlet weak var houseImageView: UIImageView!
     @IBOutlet weak var houseLabel: UILabel!
     
     // MARK: - Configuration
-    func configure(witch house: House) {
+    func configure(witch house: House, isFavourite: Bool) {
         // RawValue lo utilizamos para obtener
         // la representacion del String
         houseLabel.text = house.rawValue
+        favouriteImageView.isHidden = !isFavourite
         
         guard let imageURL = house.imageURL else {
             return
