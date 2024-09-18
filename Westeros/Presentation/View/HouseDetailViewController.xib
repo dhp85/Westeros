@@ -42,7 +42,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rf5-vD-hHQ" secondAttribute="trailing" id="dsZ-6K-k0F"/>
                 <constraint firstItem="rf5-vD-hHQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="m4e-7f-CkR"/>
             </constraints>
-            <point key="canvasLocation" x="117" y="-11"/>
+            <point key="canvasLocation" x="116.79389312977099" y="-11.267605633802818"/>
         </view>
     </objects>
     <resources>

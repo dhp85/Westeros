@@ -24,6 +24,8 @@
 		F72F44B52C937D5800DFF0F0 /* FavoriteHouseListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F72F44B32C937D5800DFF0F0 /* FavoriteHouseListViewController.xib */; };
 		F72F44B82C9380C100DFF0F0 /* FavoriteHouseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F44B62C9380C100DFF0F0 /* FavoriteHouseCollectionViewCell.swift */; };
 		F72F44B92C9380C100DFF0F0 /* FavoriteHouseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F72F44B72C9380C100DFF0F0 /* FavoriteHouseCollectionViewCell.xib */; };
+		F77F466A2C9AF34300820A66 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F46692C9AF34300820A66 /* NetworkModel.swift */; };
+		F77F466C2C9AF97A00820A66 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77F466B2C9AF97A00820A66 /* APIClient.swift */; };
 		F7F5DFF92C989F7800A3EC1A /* HouseDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7F5DFF82C989F7800A3EC1A /* HouseDetailViewController.xib */; };
 		F7F5DFFA2C989F7800A3EC1A /* HouseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F5DFF72C989F7800A3EC1A /* HouseDetailViewController.swift */; };
 		F7F5DFFC2C98C35B00A3EC1A /* Notification+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F5DFFB2C98C35B00A3EC1A /* Notification+Name.swift */; };
@@ -49,6 +51,8 @@
 		F72F44B32C937D5800DFF0F0 /* FavoriteHouseListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteHouseListViewController.xib; sourceTree = "<group>"; };
 		F72F44B62C9380C100DFF0F0 /* FavoriteHouseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteHouseCollectionViewCell.swift; sourceTree = "<group>"; };
 		F72F44B72C9380C100DFF0F0 /* FavoriteHouseCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteHouseCollectionViewCell.xib; sourceTree = "<group>"; };
+		F77F46692C9AF34300820A66 /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
+		F77F466B2C9AF97A00820A66 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		F7F5DFF72C989F7800A3EC1A /* HouseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailViewController.swift; sourceTree = "<group>"; };
 		F7F5DFF82C989F7800A3EC1A /* HouseDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseDetailViewController.xib; sourceTree = "<group>"; };
 		F7F5DFFB2C98C35B00A3EC1A /* Notification+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Name.swift"; sourceTree = "<group>"; };
@@ -101,6 +105,8 @@
 			children = (
 				F7070A9B2C90E51900331149 /* House.swift */,
 				F7070A9D2C90E5AA00331149 /* GotCharacter.swift */,
+				F77F46692C9AF34300820A66 /* NetworkModel.swift */,
+				F77F466B2C9AF97A00820A66 /* APIClient.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -226,8 +232,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7070A9E2C90E5AA00331149 /* GotCharacter.swift in Sources */,
+				F77F466C2C9AF97A00820A66 /* APIClient.swift in Sources */,
 				F7070A872C90E1B300331149 /* AppDelegate.swift in Sources */,
 				F7070AA62C90E7FA00331149 /* FirstViewController.swift in Sources */,
+				F77F466A2C9AF34300820A66 /* NetworkModel.swift in Sources */,
 				F7070A9C2C90E51900331149 /* House.swift in Sources */,
 				F72F44B42C937D5800DFF0F0 /* FavoriteHouseListViewController.swift in Sources */,
 				F7F5DFFC2C98C35B00A3EC1A /* Notification+Name.swift in Sources */,

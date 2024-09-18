@@ -45,6 +45,7 @@ final class HouseDetailViewController: UIViewController {
 
 // MARK: - View Configuration
 private extension HouseDetailViewController {
+    // Con esta funcion configuramos la vista.
     func configureView() {
         houseNameLabel.text = house.rawValue
         

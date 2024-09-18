@@ -61,6 +61,15 @@ final class HouseListViewController: UITableViewController {
         
         // 5. Aplicar el snapshot al data source para añadir los objetos
         dataSoruce?.apply(snapshot)
+        
+        NetworkModel.share.getAllCharacters { result in
+            switch result {
+            case let .success(Characters):
+                print(Characters)
+            case let .failure(error):
+                print(error)
+            }
+        }
     }
 }
 
