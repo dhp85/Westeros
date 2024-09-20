@@ -12,9 +12,13 @@
 		F7070A902C90E1B300331149 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7070A8F2C90E1B300331149 /* Assets.xcassets */; };
 		F7070A932C90E1B300331149 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F7070A922C90E1B300331149 /* Base */; };
 		F7070A9C2C90E51900331149 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7070A9B2C90E51900331149 /* House.swift */; };
-		F7070A9E2C90E5AA00331149 /* GotCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7070A9D2C90E5AA00331149 /* GotCharacter.swift */; };
+		F7070A9E2C90E5AA00331149 /* GOTCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7070A9D2C90E5AA00331149 /* GOTCharacter.swift */; };
 		F7070AA62C90E7FA00331149 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7070AA42C90E7FA00331149 /* FirstViewController.swift */; };
 		F7070AA72C90E7FA00331149 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7070AA52C90E7FA00331149 /* FirstViewController.xib */; };
+		F7201D272C9C916B001AE95B /* CharacterListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7201D252C9C916B001AE95B /* CharacterListTableViewController.swift */; };
+		F7201D282C9C916B001AE95B /* CharacterListTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7201D262C9C916B001AE95B /* CharacterListTableViewController.xib */; };
+		F7201D302C9CA814001AE95B /* NetworkModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7201D2F2C9CA814001AE95B /* NetworkModelTest.swift */; };
+		F7201D382C9CA86F001AE95B /* APIClientProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7201D372C9CA86F001AE95B /* APIClientProtocolMock.swift */; };
 		F72F44A72C935AAB00DFF0F0 /* HouseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F44A52C935AAB00DFF0F0 /* HouseListViewController.swift */; };
 		F72F44A82C935AAB00DFF0F0 /* HouseListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F72F44A62C935AAB00DFF0F0 /* HouseListViewController.xib */; };
 		F72F44AB2C935DA800DFF0F0 /* HouseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72F44A92C935DA800DFF0F0 /* HouseTableViewCell.swift */; };
@@ -31,6 +35,16 @@
 		F7F5DFFC2C98C35B00A3EC1A /* Notification+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F5DFFB2C98C35B00A3EC1A /* Notification+Name.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F7201D312C9CA814001AE95B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F7070A7B2C90E1B300331149 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F7070A822C90E1B300331149;
+			remoteInfo = Westeros;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		F7070A832C90E1B300331149 /* Westeros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westeros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7070A862C90E1B300331149 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,9 +53,14 @@
 		F7070A922C90E1B300331149 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7070A942C90E1B400331149 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7070A9B2C90E51900331149 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
-		F7070A9D2C90E5AA00331149 /* GotCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GotCharacter.swift; sourceTree = "<group>"; };
+		F7070A9D2C90E5AA00331149 /* GOTCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOTCharacter.swift; sourceTree = "<group>"; };
 		F7070AA42C90E7FA00331149 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		F7070AA52C90E7FA00331149 /* FirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
+		F7201D252C9C916B001AE95B /* CharacterListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListTableViewController.swift; sourceTree = "<group>"; };
+		F7201D262C9C916B001AE95B /* CharacterListTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterListTableViewController.xib; sourceTree = "<group>"; };
+		F7201D2D2C9CA814001AE95B /* WesterosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WesterosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7201D2F2C9CA814001AE95B /* NetworkModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModelTest.swift; sourceTree = "<group>"; };
+		F7201D372C9CA86F001AE95B /* APIClientProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientProtocolMock.swift; sourceTree = "<group>"; };
 		F72F44A52C935AAB00DFF0F0 /* HouseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListViewController.swift; sourceTree = "<group>"; };
 		F72F44A62C935AAB00DFF0F0 /* HouseListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseListViewController.xib; sourceTree = "<group>"; };
 		F72F44A92C935DA800DFF0F0 /* HouseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseTableViewCell.swift; sourceTree = "<group>"; };
@@ -66,6 +85,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F7201D2A2C9CA814001AE95B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -73,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				F7070A852C90E1B300331149 /* Westeros */,
+				F7201D2E2C9CA814001AE95B /* WesterosTests */,
 				F7070A842C90E1B300331149 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				F7070A832C90E1B300331149 /* Westeros.app */,
+				F7201D2D2C9CA814001AE95B /* WesterosTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,7 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				F7070A9B2C90E51900331149 /* House.swift */,
-				F7070A9D2C90E5AA00331149 /* GotCharacter.swift */,
+				F7070A9D2C90E5AA00331149 /* GOTCharacter.swift */,
 				F77F46692C9AF34300820A66 /* NetworkModel.swift */,
 				F77F466B2C9AF97A00820A66 /* APIClient.swift */,
 			);
@@ -123,6 +151,7 @@
 		F7070AA02C90E62600331149 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F7201D252C9C916B001AE95B /* CharacterListTableViewController.swift */,
 				F7070AA42C90E7FA00331149 /* FirstViewController.swift */,
 				F72F44A52C935AAB00DFF0F0 /* HouseListViewController.swift */,
 				F72F44B22C937D5800DFF0F0 /* FavoriteHouseListViewController.swift */,
@@ -142,8 +171,26 @@
 				F72F44B62C9380C100DFF0F0 /* FavoriteHouseCollectionViewCell.swift */,
 				F72F44B72C9380C100DFF0F0 /* FavoriteHouseCollectionViewCell.xib */,
 				F7F5DFF82C989F7800A3EC1A /* HouseDetailViewController.xib */,
+				F7201D262C9C916B001AE95B /* CharacterListTableViewController.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F7201D2E2C9CA814001AE95B /* WesterosTests */ = {
+			isa = PBXGroup;
+			children = (
+				F7201D362C9CA847001AE95B /* Helpers */,
+				F7201D2F2C9CA814001AE95B /* NetworkModelTest.swift */,
+			);
+			path = WesterosTests;
+			sourceTree = "<group>";
+		};
+		F7201D362C9CA847001AE95B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F7201D372C9CA86F001AE95B /* APIClientProtocolMock.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		F72F44AD2C9363AA00DFF0F0 /* Extensions */ = {
@@ -175,6 +222,24 @@
 			productReference = F7070A832C90E1B300331149 /* Westeros.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F7201D2C2C9CA814001AE95B /* WesterosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7201D332C9CA814001AE95B /* Build configuration list for PBXNativeTarget "WesterosTests" */;
+			buildPhases = (
+				F7201D292C9CA814001AE95B /* Sources */,
+				F7201D2A2C9CA814001AE95B /* Frameworks */,
+				F7201D2B2C9CA814001AE95B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7201D322C9CA814001AE95B /* PBXTargetDependency */,
+			);
+			name = WesterosTests;
+			productName = WesterosTests;
+			productReference = F7201D2D2C9CA814001AE95B /* WesterosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -187,6 +252,10 @@
 				TargetAttributes = {
 					F7070A822C90E1B300331149 = {
 						CreatedOnToolsVersion = 15.4;
+					};
+					F7201D2C2C9CA814001AE95B = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = F7070A822C90E1B300331149;
 					};
 				};
 			};
@@ -204,6 +273,7 @@
 			projectRoot = "";
 			targets = (
 				F7070A822C90E1B300331149 /* Westeros */,
+				F7201D2C2C9CA814001AE95B /* WesterosTests */,
 			);
 		};
 /* End PBXProject section */
@@ -218,9 +288,17 @@
 				F7070A932C90E1B300331149 /* Base in Resources */,
 				F72F44B92C9380C100DFF0F0 /* FavoriteHouseCollectionViewCell.xib in Resources */,
 				F7F5DFF92C989F7800A3EC1A /* HouseDetailViewController.xib in Resources */,
+				F7201D282C9C916B001AE95B /* CharacterListTableViewController.xib in Resources */,
 				F72F44B52C937D5800DFF0F0 /* FavoriteHouseListViewController.xib in Resources */,
 				F7070AA72C90E7FA00331149 /* FirstViewController.xib in Resources */,
 				F72F44A82C935AAB00DFF0F0 /* HouseListViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7201D2B2C9CA814001AE95B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,7 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7070A9E2C90E5AA00331149 /* GotCharacter.swift in Sources */,
+				F7070A9E2C90E5AA00331149 /* GOTCharacter.swift in Sources */,
 				F77F466C2C9AF97A00820A66 /* APIClient.swift in Sources */,
 				F7070A872C90E1B300331149 /* AppDelegate.swift in Sources */,
 				F7070AA62C90E7FA00331149 /* FirstViewController.swift in Sources */,
@@ -242,13 +320,31 @@
 				F72F44B12C93641400DFF0F0 /* UImageView+Remote.swift in Sources */,
 				F7070A892C90E1B300331149 /* SceneDelegate.swift in Sources */,
 				F72F44AB2C935DA800DFF0F0 /* HouseTableViewCell.swift in Sources */,
+				F7201D272C9C916B001AE95B /* CharacterListTableViewController.swift in Sources */,
 				F72F44A72C935AAB00DFF0F0 /* HouseListViewController.swift in Sources */,
 				F72F44B82C9380C100DFF0F0 /* FavoriteHouseCollectionViewCell.swift in Sources */,
 				F7F5DFFA2C989F7800A3EC1A /* HouseDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F7201D292C9CA814001AE95B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7201D302C9CA814001AE95B /* NetworkModelTest.swift in Sources */,
+				F7201D382C9CA86F001AE95B /* APIClientProtocolMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F7201D322C9CA814001AE95B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F7070A822C90E1B300331149 /* Westeros */;
+			targetProxy = F7201D312C9CA814001AE95B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F7070A912C90E1B300331149 /* LaunchScreen.storyboard */ = {
@@ -433,6 +529,40 @@
 			};
 			name = Release;
 		};
+		F7201D342C9CA814001AE95B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Diego.WesterosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Westeros.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Westeros";
+			};
+			name = Debug;
+		};
+		F7201D352C9CA814001AE95B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Diego.WesterosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Westeros.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Westeros";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -450,6 +580,15 @@
 			buildConfigurations = (
 				F7070A982C90E1B400331149 /* Debug */,
 				F7070A992C90E1B400331149 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7201D332C9CA814001AE95B /* Build configuration list for PBXNativeTarget "WesterosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7201D342C9CA814001AE95B /* Debug */,
+				F7201D352C9CA814001AE95B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

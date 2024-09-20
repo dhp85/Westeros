@@ -7,12 +7,11 @@
 
 import Foundation
 
-
 final class NetworkModel {
-    // Estamos creando el NetworkModel como singleton.
-    static let share = NetworkModel()
+    // Estamos creando el NetworkModel como singleton
+    static let shared = NetworkModel()
     
-    //  https://thronesapi.com
+    // https://thronesapi.com
     private var baseComponents: URLComponents {
         var components = URLComponents()
         components.scheme = "https"
@@ -22,13 +21,14 @@ final class NetworkModel {
     
     private let client: APIClientProtocol
     
-    private init(client: APIClientProtocol = APIClient()) {
+    init(client: APIClientProtocol = APIClient()) {
         self.client = client
-        
     }
     
-    func getAllCharacters(completion: @escaping (Result<[GotCharacter], WesterosError>) -> Void) {
-        // Vamos a crear nuestra url request.
+    func getAllCharacters(
+        completion: @escaping (Result<[GOTCharacter], WesterosError>) -> Void
+    ) {
+        // Vamos a crear nuestra url request
         var components = baseComponents
         components.path = "/api/v2/Characters"
         
@@ -37,26 +37,25 @@ final class NetworkModel {
         }
         
         var urlRequest = URLRequest(url: url)
-        urlRequest.httpMethod = "Get"
-        
-        client.requestCharacters(urlRequest, completion: completion)
-        
+        urlRequest.httpMethod = "GET"
+
+        client.request([GOTCharacter].self, from: urlRequest, completion: completion)
     }
     
-    // Creado al principio de la clase.
-    /*func get1AllCharacters(completion: @escaping ([GotCharacter]?, Error?) -> Void) {
-     // Vamos a crear nuestra url request.
-     var components = baseComponents
-     components.path = "/api/v2/Characters"
-     
-     guard let url = components.url else {
-     return
-     }
-     
-     var urlRequest = URLRequest(url: url)
-     urlRequest.httpMethod = "Get"
-     
-     //client.requestCharacters(urlRequest, completion: completion)
-     }
-     }*/
+    func getAllCharacters(
+        completion: @escaping ([GOTCharacter]?, Error?) -> Void
+    ) {
+        // Vamos a crear nuestra url request
+        var components = baseComponents
+        components.path = "/api/v2/Characters"
+        
+        guard let url = components.url else {
+            return
+        }
+        
+        var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = "GET"
+        
+//        client.requestCharacters(urlRequest, completion: completion)
+    }
 }

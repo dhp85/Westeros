@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct GotCharacter: Codable {
-    let fullname: String
+struct GOTCharacter: Codable, Hashable {
+    let fullName: String
     let title: String
     let family: String
 }
