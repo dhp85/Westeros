@@ -34,6 +34,9 @@ final class NetworkModelTests: XCTestCase {
         let someResult = Result<[GOTCharacter], WesterosError>.success([])
         mock.recivedResult = someResult
         var recivedResult: Result<[GOTCharacter], WesterosError>?
+        let expectedURL = URL(string: "https://thronesapi.com/api/v2/Characters")!
+        var expectedRequest = URLRequest(url: expectedURL)
+        expectedRequest.httpMethod = "GET"
         // When, cuando el objeto haga algo.
         
         sut.getAllCharacters { result in
@@ -46,5 +49,26 @@ final class NetworkModelTests: XCTestCase {
         
         XCTAssertEqual(someResult, recivedResult)
         XCTAssert(mock.didCallRequest)
+        XCTAssertEqual(mock.recivedRequest, expectedRequest)
     }
+    
+    func test_getAllCharacters_failure() {
+        // Given
+        let someResult = Result<[GOTCharacter], WesterosError>.failure(.unknown)
+        mock.recivedResult = someResult
+        var recivedResult: Result<[GOTCharacter], WesterosError>?
+        
+        // When
+        
+        sut.getAllCharacters { result in
+            recivedResult = result
+        }
+        
+        // Then
+        
+        XCTAssertEqual(someResult, recivedResult)
+        
+    }
+    
+    
 }

@@ -70,6 +70,8 @@ final class HouseListViewController: UITableViewController {
                 print(error)
             }
         }
+        
+        LocalDataModel.save(value: "some_token")
     }
 }
 
